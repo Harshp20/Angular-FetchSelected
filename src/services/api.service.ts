@@ -7,8 +7,6 @@ import { Post } from '../interfaces/posts'
     providedIn: 'root'
 })
 export class ApiService {
-    // option: string = 'users'
-    
     constructor (private http: HttpClient) {}
     
     getPosts (option: string): Observable<any> {

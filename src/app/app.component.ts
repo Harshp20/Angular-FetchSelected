@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   posts: any[] = []
   isLoading: boolean = false
   option: string = ''
+  defaultOption: string = ''
 
   constructor (private apiService: ApiService) {}
 

@@ -1,4 +1,5 @@
 <select [(ngModel)]="option" (ngModelChange)="fetchData($event)">
+  <option [value]="defaultOption" selected disabled hidden>Select an Option</option>
   <option value="posts">Posts</option>
   <option value="users">Users</option>
   <option value="comments">Comments</option>
