@@ -1,0 +1,7 @@
+<select [(ngModel)]="option" (ngModelChange)="fetchData($event)">
+  <option value="posts">Posts</option>
+  <option value="users">Users</option>
+  <option value="comments">Comments</option>
+</select>
+<h3 *ngIf="isLoading">Loading...</h3>
+<h4 *ngIf="posts.length"><pre>{{ posts | json }}</pre></h4>
